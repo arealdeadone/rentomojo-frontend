@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="jumbotron">
+        <form (ngSubmit)="postComment()">
+          <div class="form-group">
+            <label for="comment"></label>
+            <textarea class="form-control" name="comment" [(ngModel)]="comment.comment" id="comment" cols="30" rows="10"></textarea>
+          </div>
+          <div class="row">
+            <div class="offset-md-4 col-md-4">
+              <button class="btn btn-outline-success btn-block">
+                Post
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="container-fluid">
+          <div class="row" *ngFor="let comment of comments">
+            <div class="col-sm-12">
+              <app-comments [userComments]="comment"></app-comments>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>

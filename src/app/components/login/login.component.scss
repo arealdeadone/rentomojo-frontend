@@ -1,0 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+.form-outline {
+  padding: 10px;
+  border: 1px solid $success;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}

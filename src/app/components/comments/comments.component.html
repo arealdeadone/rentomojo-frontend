@@ -1,0 +1,13 @@
+<div class="media-body">
+  <div class="well well-lg">
+    <h4 class="media-heading text-uppercase reviews"> {{userComments.name}} </h4>
+    <p class="media-comment">
+      {{userComments.text}}
+    </p>
+    <button type="button" (click)="inccrementLikes()" class="btn btn-success btn-circle text-uppercase" id="reply">Like {{userComments.likes}}</button> &nbsp;
+    <button type="button" (click)="incrementDislikes()" class="btn btn-danger btn-circle text-uppercase"  >Dislike {{userComments.dislikes}}</button>
+  </div>
+  <span class="mb-3">
+    <hr/>
+  </span>
+</div>
