@@ -1,12 +1,5 @@
-# RentoMojo Assignment Frontend
-The project consists of two parts - The Frontend created using Angular and the backend created using  Node.Js and Express. \
-This Fronend is a Single Page Application (SPA) which consists of Login, Signup and the post page. The Post page is a protected route that can be only accessed when a user is logged in. The post page is used to `post`, `upvote` and `downvote` comments \
-The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
-
-## Directory Structure
-
 ```
-   |-- RentoMojo
+|-- RentoMojo
        |-- .editorconfig
        |-- .gitignore
        |-- angular.json
@@ -95,18 +88,3 @@ The project was generated with [Angular CLI](https://github.com/angular/angular-
                |-- environment.ts
 
 ```
-
-
-## Running Locally
-
-Run `git clone https://github.com/arealdeadone/rentomojo_frontend.git` to clone the project to a local directory. \
-Run `npm install` to install the dependencies \
-Run `ng serve` to start the local development server
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Project Workflow
-
-The root page is the login page, which can be used to login. This redirects to the post page, where the user can post, upvote and downvote comments. The register page can be used to register new users. The authentication system is implemented in order to ensure that the comments can be identified by users.
